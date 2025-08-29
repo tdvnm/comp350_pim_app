@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>PIM Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Use actual logo.svg from static folder -->
+            <img class="icon" src="/static/logo.svg" alt="PIM logo" width="78" height="78" />
+            <div class="title">PIM</div>
+        </div>
+
+        <form class="login-form" method="post" action="/login" novalidate>
+            <input name="username" type="text" placeholder="username" class="input" autocomplete="username" />
+            <input name="password" type="password" placeholder="password" class="input" autocomplete="current-password" />
+            <button type="submit" class="btn">sign in</button>
+        </form>
+    </div>
+</body>
+</html>
